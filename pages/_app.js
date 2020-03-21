@@ -17,7 +17,7 @@ function App({ Component, pageProps }) {
         loadingDelay={500}
         loadingTimeout={{
           enter: TIMEOUT,
-          exit: 0
+          exit: 0,
         }}
         loadingClassNames="loading-indicator"
       >

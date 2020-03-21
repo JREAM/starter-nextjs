@@ -1,6 +1,6 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, {Head, Main, NextScript} from 'next/document';
 import React from 'react';
-import { GA_TRACKING_ID } from '../lib/gtag';
+import {GA_TRACKING_ID} from '../lib/gtag';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
-          `
+          `,
             }}
           />
           <meta

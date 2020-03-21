@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --fix components lib pages"
   },
   "dependencies": {
     "next": "latest",
@@ -15,5 +16,14 @@
     "react-dom": "^16.13.1",
     "react-md": "^1.16.0",
     "sass": "^1.26.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-eslint": "^6.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "typescript": "^3.8.3"
   }
 }
