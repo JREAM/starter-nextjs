@@ -1,55 +1,30 @@
-import React from 'react'
-import { PageTransition } from 'next-page-transitions'
+import { PageTransition } from 'next-page-transitions';
+import Router from 'next/router';
+import React from 'react';
+import * as gtag from '../lib/gtag';
+import '../styles/app.scss';
 
-import Loader from '../components/Loader'
+Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));
 
-const TIMEOUT = 400
+const TIMEOUT = 100;
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <PageTransition
         timeout={TIMEOUT}
         classNames="page-transition"
-        loadingComponent={<Loader />}
         loadingDelay={500}
         loadingTimeout={{
           enter: TIMEOUT,
-          exit: 0,
+          exit: 0
         }}
         loadingClassNames="loading-indicator"
       >
         <Component {...pageProps} />
       </PageTransition>
-      <style jsx global>{`
-        .page-transition-enter {
-          opacity: 0;
-          transform: translate3d(0, 20px, 0);
-        }
-        .page-transition-enter-active {
-          opacity: 1;
-          transform: translate3d(0, 0, 0);
-          transition: opacity ${TIMEOUT}ms, transform ${TIMEOUT}ms;
-        }
-        .page-transition-exit {
-          opacity: 1;
-        }
-        .page-transition-exit-active {
-          opacity: 0;
-          transition: opacity ${TIMEOUT}ms;
-        }
-        .loading-indicator-appear,
-        .loading-indicator-enter {
-          opacity: 0;
-        }
-        .loading-indicator-appear-active,
-        .loading-indicator-enter-active {
-          opacity: 1;
-          transition: opacity ${TIMEOUT}ms;
-        }
-      `}</style>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default App;

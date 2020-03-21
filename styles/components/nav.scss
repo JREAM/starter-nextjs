@@ -1,0 +1,20 @@
+@import '../vars';
+
+.nav {
+  padding: 20px;
+  vertical-align: center;
+  color: $foregroundNav;
+  background: $backgroundNav;
+  a {
+    text-decoration: none;
+    margin: 0 4px 0 0;
+    color: #fff;
+    background-color: $backgroundNavLink;
+    &:active,
+    &:visited,
+    &:hover {
+      background-color: $backgroundNavLinkHover;
+    }
+    padding: 5px 20px;
+  }
+}
