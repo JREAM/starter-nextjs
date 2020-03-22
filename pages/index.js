@@ -1,9 +1,10 @@
 import React from 'react';
+import Card from '../components/Card';
 import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout title="Home">
-    <div className="container page">
+    <div className="row">
       <h1>Home</h1>
       <p>
         Simil ue enim repellat officiis. Consequatur ea et est. Consequuntur
@@ -21,6 +22,16 @@ const Index = () => (
         exercitationem temporibus et quo quo. Consequatur alias magnam error
         ipsum ab ut. Aliquam possimus adipisci voluptatem voluptatem sint harum.
       </p>
+      <section className="section">
+        <div className="column">
+          <Card title="Something">
+            <p>
+            Voluptate ea consequat culpa ad aute. Eiusmod irure sit ea incididunt non sit aliqua non pariatur consequat. Aliquip officia nulla ullamco aliquip sunt. Labore laborum nostrud enim magna do aliqua ea commodo adipisicing ipsum deserunt et Lorem. Laboris fugiat aliqua irure aliquip tempor fugiat laborum pariatur in duis tempor esse. Consequat cupidatat do amet sit eiusmod ex ex veniam commodo elit aliquip Lorem ex.
+            </p>
+          </Card>
+        </div>
+      </section>
+
     </div>
   </Layout>
 );

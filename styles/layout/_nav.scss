@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import '../vars';
+
+nav .nav {
+  background: $backgroundNav;
+  color: $foregroundNav;
+  padding: 5px 20px;
+  vertical-align: center;
+
+  a {
+    background-color: $backgroundNavLink;
+    color: #fff;
+    margin: 0 4px 0 0;
+    text-decoration: none;
+
+    &:active,
+    &:visited,
+    &:hover {
+      background-color: $backgroundNavLinkHover;
+    }
+  }
+
+}

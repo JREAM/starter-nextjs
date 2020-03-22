@@ -3,6 +3,7 @@
 > Have not written code for 4 months now, am rusty. VSCode is being a butt with eslint and autoformatting acting wonky, just wanted to get something going for use later.
 
 - [Next Starter](#next-starter)
+  - [Features](#features)
   - [Install](#install)
   - [Develop](#develop)
   - [Production](#production)
@@ -10,6 +11,15 @@
     - [Store a Secret](#store-a-secret)
     - [Remove a Secret](#remove-a-secret)
     - [Rename a Secret](#rename-a-secret)
+
+---
+
+## Features
+
+- Milligram CSS
+- SCSS
+- Next.js
+- LoLW
 
 ## Install
 

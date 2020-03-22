@@ -6,6 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "db:import": "yarn lib/import.js",
     "lint": "eslint --fix components lib pages"
   },
   "dependencies": {
