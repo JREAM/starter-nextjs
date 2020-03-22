@@ -6,13 +6,17 @@ class About extends React.Component {
     return (
       <Layout title="About">
         <div className="container page">
-          <h1>About us</h1>
-          <p>
+          <div className="row">
+            <div className="column">
+              <h1>About us</h1>
+              <p>
             Inventore corporis explicabo quia et aliquam et recusandae fuga
             assumenda. Voluptatem voluptas enim praesentium commodi ipsa
             adipisci. Et voluptatem eos. Non non harum omnis magni distinctio
             laborum ut iste.
-          </p>
+              </p>
+            </div>
+          </div>
         </div>
       </Layout>
     );

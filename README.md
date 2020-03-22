@@ -6,6 +6,10 @@
   - [Install](#install)
   - [Develop](#develop)
   - [Production](#production)
+  - [Secrets](#secrets)
+    - [Store a Secret](#store-a-secret)
+    - [Remove a Secret](#remove-a-secret)
+    - [Rename a Secret](#rename-a-secret)
 
 ## Install
 
@@ -25,6 +29,26 @@ Visit: http://localhost:3000
 
 ```sh
 yarn start
+```
+
+## Secrets
+
+### Store a Secret
+
+```sh
+now secrets add <secret-name> <secret-value>
+```
+
+### Remove a Secret
+
+```sh
+now secrets rm <secret-name>
+```
+
+### Rename a Secret
+
+```sh
+now secrets rename <secret-name> <new-name>
 ```
 
 ---

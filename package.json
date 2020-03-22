@@ -9,6 +9,7 @@
     "lint": "eslint --fix components lib pages"
   },
   "dependencies": {
+    "milligram": "^1.3.0",
     "next": "latest",
     "next-page-transitions": "1.0.0-beta.2",
     "react": "^16.7.0",
