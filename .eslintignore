@@ -1,4 +1,7 @@
-node_modules/*
-build/*
-import/*
-.next/*
+DS_Store
+node_modules
+out
+build
+import
+.next
+*.log
