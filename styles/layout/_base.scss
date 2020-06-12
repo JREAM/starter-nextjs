@@ -1,5 +1,5 @@
 body {
-  font-size: 1.2em;
+  font-size: $fontSize;
   background-color: $backgroundColor;
 }
 
@@ -14,7 +14,8 @@ body {
   &-transition-enter-active {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-    transition: opacity $loading-transition-duration, transform $loading-transition-duration;
+    transition: opacity $loading-transition-duration,
+      transform $loading-transition-duration;
   }
 
   &-transition-exit {
@@ -36,5 +37,4 @@ body {
     opacity: 1;
     transition: opacity $loading-transition-duration;
   }
-
 }

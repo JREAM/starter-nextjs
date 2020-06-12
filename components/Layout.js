@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Footer from './Footer';
-import Header from './Header';
 import Nav from './Nav';
 
 const Layout = ({ children, title }) => (
@@ -10,12 +9,8 @@ const Layout = ({ children, title }) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Header>
-      <Nav />
-    </Header>
-    <div className="page">
-      {children}
-    </div>
+    <Nav />
+    <div className="page">{children}</div>
     <Footer />
   </div>
 );

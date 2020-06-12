@@ -83,6 +83,7 @@
  */
 
 module.exports = {
+  root: true,
   /**
    * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    * 🠶 PARSER
@@ -101,8 +102,8 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       modules: true,
-      jsx: true // For React and Preact Projects, JSX
-    }
+      jsx: true, // For React and Preact Projects, JSX
+    },
   },
 
   /**
@@ -112,7 +113,7 @@ module.exports = {
    * @docs https://eslint.org/docs/user-guide/configuring#using-eslintrecommended
    * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
     // 'eslint-config-synacore',  // For Preact Projects
   ],
 
@@ -123,8 +124,8 @@ module.exports = {
    * @docs https://eslint.org/docs/user-guide/configuring#using-the-configuration-from-a-plugin
    * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
   plugins: [
-    'react',      // For React Projects
-    'react-hooks' // For React Projects
+    'react', // For React Projects
+    'react-hooks', // For React Projects
   ],
 
   /**
@@ -137,7 +138,7 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true,
-    node: true
+    node: true,
   },
 
   /**
@@ -148,8 +149,8 @@ module.exports = {
   settings: {
     react: {
       // pragma: 'h',       // [~] Preact Projects
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
 
   /**
@@ -239,6 +240,6 @@ module.exports = {
      * ::React-Hooks
      * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― */
     'react-hooks/rules-of-hooks': 2, // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': 1 // Checks effect dependencies
-  }
+    'react-hooks/exhaustive-deps': 1, // Checks effect dependencies
+  },
 };
