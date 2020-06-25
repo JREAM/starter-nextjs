@@ -3,7 +3,7 @@ import Router from 'next/router';
 import React from 'react';
 import * as gtag from '../lib/gtag';
 // Main Style Sheet
-import '../styles/app.scss';
+import '../assets/styles/app.scss';
 
 
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));

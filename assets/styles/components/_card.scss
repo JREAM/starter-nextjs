@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import '../vars';
+
+div .card {
+  border: 1px solid red;
+
+  &.card-header {
+    border: 1px solid green;
+
+    &.card-title {
+      margin: 0;
+      padding: 0;
+      font-size: 1.4rem;
+    }
+  }
+
+  &.card-body {
+    border: 1px solid green;
+  }
+
+  &.card-footer {
+    border: 1px solid green;
+  }
+
+}
